@@ -1,0 +1,341 @@
+/* FONTS
+	font-family: 'roboto', sans-serif;
+	font-family: 'Poppins', sans-serif;	
+ */
+/* Reset config */
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	border: none;
+}
+/* Root font-size / cor*/
+:root{
+	font-size: 62.5%;
+	--cor-white: rgba(255, 255, 255, 1);
+	--cor-black: rgba(0, 0, 0, 1);
+	--cor-blue_button: rgba(33, 122, 205, 1);
+	--cor-blue_button_hover: rgba(33, 122, 205, .8);
+	--font-family: 'roboto', sans-serif;
+	
+	scroll-behavior: smooth;
+}
+/* Reset  */
+body {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  font-family: var(--font-family);
+  background: var(--cor-white);
+}
+/* Preset Style */
+.button-apple{ 
+	padding: 1.2rem 2.4rem;
+	font-family: var(--font-family);
+	font-size: 1.6rem;
+	font-weight: 300;
+	color: var(--cor-white);
+	background: var(--cor-blue_button);
+	border-radius: 10.0rem;
+	cursor: pointer;
+	text-decoration: none;
+	text-transform: capitalize;
+	transition: background .5s;
+}
+/* Header */
+body > header{
+	height: 6.0rem;
+	width: 100vw;
+ 	background: var(--cor-white);
+	border-bottom: .2rem solid rgba(0, 0, 0, 25%);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+body > header > p{
+	font-size: 1.8rem;
+	font-weight: 100;
+	color: var(--cor-black);
+}
+/* Main => beginning */
+body > main > .beginning{
+	height: calc(100vh - (2.4rem + 6.0rem));
+	width: 100vw;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	gap: 2.4rem;
+}
+body > main > .beginning > .content{}
+body > main > .beginning > .content h1{
+	font-weight: 500;
+	font-size: 6.4rem;
+	line-height: 4.2rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center
+}
+body > main > .beginning > .content h1 span{
+	font-size: 2.6rem;
+	font-weight: 300
+}
+/* Main => .beginning => Figure */
+body > main > .beginning > figure{}
+body > main > .beginning > figure > img{
+	width: 35.0rem;
+	height: 35.0rem;
+	filter: drop-shadow(.4rem 0 .4rem rgba(0, 0, 0, 25%));
+	transform: translateY(1.0rem)
+}
+/* Main => .beginning => Figure => .panel */
+body > main > .beginning > figure > .panel{
+	height: 13.0rem;
+	width: 35.0rem;
+	background: var(--cor-white);
+	border-radius: 1.2rem;
+	box-shadow: 0 0 2.4rem rgba(0, 0, 0, 35%);
+	display: flex;
+	overflow: hidden;
+	z-index: 3;
+}
+/* Main => .beginning => Figure => .panel => .content */
+body > main > .beginning > figure > .panel > .content{
+	flex-basis: 70%;
+	display: flex;
+	align-items: center;
+	justify-content: center
+}
+body > main > .beginning > figure > .panel > .content > img{
+	height: 10.0rem;
+	width: 10.0rem;
+	filter: drop-shadow(.4rem .2rem .2rem rgba(0, 0, 0, 25%))
+}
+body > main > .beginning > figure > .panel > .content > p{
+	font-size: 4.2rem;
+	font-weight: 900;
+	filter: drop-shadow(.4rem .2rem .2rem rgba(0, 0, 0, 25%))
+}
+body > main > .beginning > figure > .panel > a{
+	flex-basis: 30%;
+}
+/* Main => .beginning => Figure => .panel => a */
+body > main > .beginning > figure > .panel > a{
+	height: 100%;
+	width: 100%;
+	border-radius: 0;
+	font-size: 2.4rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+body > main > .beginning > figure > .panel > a:hover{
+	background: var(--cor-blue_button_hover);
+}
+/* Main => .about */
+body > main > .about{
+	padding: 2.4rem;
+	min-height: 100vh;
+	background: var(--cor-black);
+	color: var(--cor-white);
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	gap: 2.4rem;
+}
+/* Main => .about => Figure */
+body > main > .about > figure{
+	height: 50.0rem;
+	max-width: 50.0rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	flex-basis: 50%;
+}
+body > main > .about > figure > img{
+	height: 30.0rem;
+	width: 30.0rem;
+	z-index: 3;
+}
+/* Main => .about => Figure => .icons-me-ling */
+body > main > .about > figure > .icons-me-ling{
+	display: flex;
+	gap: 0rem;
+	transform: translateY(6.2rem);
+}
+body > main > .about > figure > .icons-me-ling > img{
+	width: 12.0rem;
+	height: auto;
+}
+body > main > .about > figure > .icons-me-ling > img:is(:nth-child(1)){
+	transform: translateY(9rem);
+}
+body > main > .about > figure > .icons-me-ling > img:is(:nth-child(3)){
+	transform: translateY(12rem);
+}
+/* Main => .about => .content */
+body > main > .about > .content{
+	max-width: 70.0rem;
+	flex-basis: 50%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	gap: 1.2rem;
+}
+body > main > .about > .content > h2{
+	width: 100%;
+	font-size: 4.2rem;
+	font-weight: 200;
+	text-align: start;
+}
+body > main > .about > .content > p{
+	font-size: 1.6rem;
+	font-weight: 200;
+	text-align: justify;
+}
+body > main > .about > .content > a{
+
+}
+body > main > .about > .content > a:hover{
+	background: var(--cor-blue_button_hover)
+}
+body > main > .about > .content > a:after{
+	content: ' >';
+	font-family: 'Poppins', sans-serif;
+	font-weight: 300;
+}
+/* Main => .projects */
+body > main > .projects{
+	min-height: 100vh;
+}
+/* Main => .projects => .project */
+body > main > .projects > .project{
+	width: 100vw;
+	height: 100vh;
+	color: var(--cor-black);
+	background: var(--cor-white);
+	display: flex;
+	overflow: hidden;
+}
+body > main > .projects > .project:nth-child(even){
+	flex-direction: row-reverse;
+	color: var(--cor-white);
+	background: var(--cor-black);
+}
+/* Main => .projects => .project => Figure */
+body > main > .projects > .project > figure{
+	position: relative;
+	flex-basis: 50%;
+	transition: flex-basis .4s;
+	overflow: hidden
+}
+body > main > .projects > .project > figure:hover{
+	flex-basis: 120%;
+}
+body > main > .projects > .project > figure:before{
+	content: '';
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background: rgba(0, 0, 0, .4);
+	backdrop-filter: blur(2px);
+	opacity: 0;
+	transition: opacity .5s;
+}
+body > main > .projects > .project > figure:hover::before{
+	opacity: 1;
+}
+body > main > .projects > .project > figure > img{
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	transition: transform .5s .1s
+}
+body > main > .projects > .project > figure:hover + img{
+	transform: scale(1.1)
+}
+/* Main => .projects => .project => Figure => a => Button */
+body > main > .projects > .project > figure > a{
+	background: var(--cor-white);
+	color: var(--cor-black);
+	opacity: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	transition: opacity .5s, background .5s;
+}
+body > main > .projects > .project > figure:hover a{
+	opacity: 1;
+}
+body > main > .projects > .project > figure > a:hover{
+	--cor-white_hover: rgba(255, 255, 255, .8);
+	background: var(--cor-white_hover);
+}
+/* Main => .projects => .project => .content */
+body > main > .projects > .project > .content{
+	position: relative;
+	flex-basis: 50%;
+	transition: flex-basis .4s;
+	overflow: hidden;
+}
+body > main > .projects > .project > .content:hover{
+	flex-basis: 120%;
+}
+body > main > .projects > .project > .content > h2{
+	font-size: 5.2rem;
+	font-weight: 200;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	transition: top 1s, opacity .2s;
+}
+body > main > .projects > .project > .content:hover  h2{
+	top: 20%;
+}
+/* Main => .projects => .project => .content => a => button */
+body > main > .projects > .project > .content > a{
+	opacity: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	transition: opacity .5s, background .5s;
+}
+body > main > .projects > .project > .content > a:hover{
+	background: var(--cor-blue_button_hover) 
+}
+body > main > .projects > .project > .content:hover a{
+	opacity: 1
+}
+/* Main => .projects => .project => .content =>  .icons-use-ling */
+body > main > .projects > .project > .content > .icons-use-ling{
+	opacity: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	display: flex;
+	gap: 3.2rem;
+	transform: translate(-50%, -50%);
+	transition: top 1s, opacity .6s;
+}
+body > main > .projects > .project > .content:hover .icons-use-ling{
+	top: 80%;
+	opacity: 1;
+}
+body > main > .projects > .project > .content:hover .icons-use-ling > img{
+	height: 10.0rem;
+	width: auto;
+	transition: transform .3s;
+}
+body > main > .projects > .project > .content > .icons-use-ling > img:hover{
+	transform: translateY(-.6rem)
+}
+/* Figure flex-basic 30% */
+body > main > .projects > .project > figure:hover + .content > h2{
+	opacity: 0
+}
+body > main > .projects > .project > figure:hover + .content > .icons-use-ling{
+	opacity: 1;
+	flex-direction: column;
+}
