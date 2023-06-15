@@ -21,11 +21,17 @@
 	scroll-behavior: smooth;
 }
 /* Reset  */
-body {
+html{
+	scroll-behavior: smooth;
+}
+body{
   font-size: 1.6rem;
   line-height: 1.5;
   font-family: var(--font-family);
   background: var(--cor-white);
+}
+img{
+	pointer-events: none;
 }
 /* Preset Style */
 .button-apple{ 
@@ -44,7 +50,7 @@ body {
 /* Header */
 body > header{
 	height: 6.0rem;
-	width: 100vw;
+	width: 100%;
  	background: var(--cor-white);
 	border-bottom: .2rem solid rgba(0, 0, 0, 25%);
 	display: flex;
@@ -59,7 +65,7 @@ body > header > p{
 /* Main => beginning */
 body > main > .beginning{
 	height: calc(100vh - (2.4rem + 6.0rem));
-	width: 100vw;
+	width: 100%;
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
@@ -184,12 +190,13 @@ body > main > .about > .content{
 body > main > .about > .content > h2{
 	width: 100%;
 	font-size: 4.2rem;
-	font-weight: 200;
+	font-weight: 400;
 	text-align: start;
 }
 body > main > .about > .content > p{
+	font-family: 'Poppins', sans-serif;	
 	font-size: 1.6rem;
-	font-weight: 200;
+	font-weight: 300;
 	text-align: justify;
 }
 body > main > .about > .content > a{
@@ -209,7 +216,7 @@ body > main > .projects{
 }
 /* Main => .projects => .project */
 body > main > .projects > .project{
-	width: 100vw;
+	width: 100%;
 	height: 100vh;
 	color: var(--cor-black);
 	background: var(--cor-white);
@@ -236,13 +243,11 @@ body > main > .projects > .project > figure:before{
 	width: 100%;
 	height: 100%;
 	position: absolute;
-	background: rgba(0, 0, 0, .4);
-	backdrop-filter: blur(2px);
-	opacity: 0;
-	transition: opacity .5s;
+	background: rgba(0, 0, 0, 0);
+	transition: background .5s;
 }
 body > main > .projects > .project > figure:hover::before{
-	opacity: 1;
+	background: rgba(0, 0, 0, .4);
 }
 body > main > .projects > .project > figure > img{
 	height: 100%;
